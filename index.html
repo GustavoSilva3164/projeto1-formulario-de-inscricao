@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>projeto1-formulario-de-inscricao</title>
 </head>
 <body>
     <table>
     <form>
+        <h1>formulario de inscrição</h1>
         <label for="nome">Nome:</label><br>
         <input type="text" name="Nome" id="nome"><br>
 
@@ -17,21 +18,30 @@
         <label for="whatsapp">WhatsApp</label><br>
         <input type="tel" name="WhatsApp" id="whatsapp"><br><br>
 
-        <label for="areaDeAtuacao">Área de atuação:</label><br>
+        <p>Área de atuação</p>
         
+        <input type="radio" name="area" id="desenvolvimento" value="ds">
         <label for="desenvolvimento">desenvolvimento</label>
-        <input type="radio" name="desenvolvimento" id="desenvolvimento"><br>
-
+        
+        <input type="radio" name="area" id="quality" value="quality Assurance">
         <label for="quality">Quality Assurance (QA)</label>
-        <input type="radio" name="Quality Assurance (QA)" id="quality"><br>
-
+       
+        <input type="radio" name="area" id="analise" value="analise de dados">
         <label for="analise">Ánalise</label>
-        <input type="radio" name="Quality Assurance (QA)" id="quality"><br>
 
-        <input type="submit" value="enviar">
+        <input type="radio" name="area" id="infraestrutura" value="infra">
+        <label for="infraestrutura">Infraestrutura</label><br><br>
+        <label for="observacoes">Observações:</label><br>
+        <textarea id="observacoes" name="observacoes" rows="2" cols="25"></textarea><br><br>
+    
+        <input type="checkbox" id="novidades" name="novidades">
+        <label for="novidades">Desejo receber novidades e ofertas por email</label><br><br>
+
+       <br><br> <input type="submit" value="enviar">
 
     </form>            
       </table>
+
       
 </body>
 </html>
